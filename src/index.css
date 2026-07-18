@@ -9,19 +9,18 @@ body {
   color: #f3f4f6;
 }
 
+/* Tailwind v4 Configuration Block */
+@theme {
+  --animate-blink: blink 0.8s step-end infinite;
+  --animate-loading-bar: loading 0.8s ease infinite;
 
-@layer utilities {
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+
   @keyframes loading {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(250%);
-    }
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(250%); }
   }
-
-  .animated-loading-bar {
-    animation: loading 0.8s ease infinite;
-  }
-
 }
