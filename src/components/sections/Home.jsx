@@ -12,11 +12,7 @@ export const Home = () => {
           Motivated and academically accomplished Information Technology student
           with a strong foundation in software development, problem-solving, and
           analytical thinking. Recognised for maintaining a high academic
-          standard and a commitment to continuous learning. A dependable and
-          adaptable individual with excellent communication and teamwork skills,
-          eager to apply technical knowledge in a professional environment.
-          Seeking an opportunity to contribute to innovative projects while
-          developing practical experience and growing as an IT professional.
+          standard and a commitment to continuous learning.
         </p>
         <div className="flex justify-center space-x-4">
           <a
