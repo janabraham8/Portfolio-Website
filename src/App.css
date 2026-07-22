@@ -72,3 +72,22 @@ html.lenis body {
 .lenis.lenis-smooth iframe {
   pointer-events: none;
 }
+
+@keyframes spaceRise {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate3d(0, -100vh, 0);
+  }
+}
+
+/* Apply the animation class used in SpaceBackground.jsx */
+.animate-spaceRise {
+  animation-name: spaceRise;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}

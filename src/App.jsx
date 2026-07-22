@@ -8,6 +8,7 @@ import { Home } from "./components/sections/Home";
 import { About } from "./components/sections/About";
 import { Projects } from "./components/sections/Projects";
 import { Contact } from "./components/sections/Contact";
+import { SpaceBackground } from "./components/SpaceBackground";
 import "./index.css";
 
 function App() {
@@ -30,18 +31,13 @@ function App() {
   return (
     <SmoothScroll>
       <div className="relative min-h-screen bg-black text-white selection:bg-blue-500 selection:text-white">
-        {/* Layer 1: Central Blue Glow */}
+        {/*Blue Glow in the middle */}
         <div className="pointer-events-none fixed inset-0 z-0 bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.15)_0%,transparent_85%)]" />
 
-        {/* Layer 2: Parallax Grid */}
-        <div
-          className="bg-grid-plus pointer-events-none fixed inset-0 z-0 transition-transform duration-100 ease-out [mask-image:radial-gradient(ellipse_at_center,transparent_30%,black_80%)]"
-          style={{
-            transform: `translateY(-${scrollProgress * 100}px)`,
-          }}
-        />
+        {/*Space background*/}
+        <SpaceBackground scrollProgress={scrollProgress} />
 
-        {/* Layer 3: Interactive Content */}
+        {/*Interactive Content */}
         {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}
 
         <div
