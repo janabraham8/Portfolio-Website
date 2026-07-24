@@ -15,8 +15,8 @@ const generateStars = (count) => {
         top: `${getRandomInRange(0, 100)}vh`, //Random vertical start
         left: `${getRandomInRange(0, 100)}vw`, //Random horizontal position
         animationDelay: `${getRandomInRange(0, 8)}s`, //Random animation start
-        animationDuration: `${getRandomInRange(20, 40)}s`, //Random rise speed
-        opacity: getRandomInRange(0.3, 0.9),
+        animationDuration: `${getRandomInRange(30, 60)}s`, //Random rise speed
+        opacity: getRandomInRange(0.4, 0.9),
       },
     };
   });
@@ -39,7 +39,7 @@ export const SpaceBackground = ({ scrollProgress }) => {
           style={{
             top: star.style.top,
             left: star.style.left,
-            transform: `translateY(${scrollProgress * (star.size * 30)}px)`,
+            transform: `translateY(${-scrollProgress * (star.size * 30)}px)`,
           }}
         >
           {/* Inner div controls the continuous upward float animation */}
