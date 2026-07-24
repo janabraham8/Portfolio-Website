@@ -24,11 +24,10 @@ export const About = () => {
 
           <div className="rounded-xl border border-white/10 p-8 transition-all hover:-translate-y-1">
             <p className="mb-4 text-gray-300">
-              I'm a dependable and adaptable individual with excellent
-              communication and teamwork skills, eager to apply technical
-              knowledge in a professional environment. Seeking an opportunity to
-              contribute to innovative projects while developing practical
-              experience and growing as an IT professional.
+              I'm an adaptable IT student who values clear communication, clean
+              code, and practical problem-solving. Through my studies and
+              hands-on projects, I've built a solid grounding in software
+              engineering and database systems.
             </p>
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
               <div className="rounded-xl p-6 transition-all hover:-translate-y-1">

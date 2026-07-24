@@ -13,10 +13,9 @@ export const Home = () => {
             Hi, I'm Jan Mostert
           </h1>
           <p className="mx-auto mb-8 max-w-lg text-lg text-gray-400">
-            A motivated and academically accomplished Information Technology
-            student with a strong foundation in software development and
-            problem-solving. Recognised for maintaining a high academic standard
-            and a commitment to continuous learning.
+            A Final-year Information Technology student dedicated to building
+            clean, functional software. Combining academic performance with
+            practical development skills to solve real-world problems.
           </p>
           <div className="flex justify-center space-x-4">
             <a
